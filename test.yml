@@ -1,0 +1,13 @@
+---
+- name: pepe
+  hosts: all
+  tasks:
+    - template:
+        src: template.j2
+        dest: /path
+    - service:
+        name: apache
+        action: restart
+    - file:
+        path: pepe
+        ferfe 
