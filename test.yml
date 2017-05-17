@@ -10,4 +10,12 @@
         action: restart
     - file:
         path: pepe
-        ferfe 
+
+
+- name: test
+  hosts: all
+  action: touch pepe
+  register: hola
+
+- name: test2
+  copya
